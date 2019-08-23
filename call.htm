@@ -663,7 +663,10 @@
 		}
 		function recordStart(){
 			console.log("Playing announcement to called");
-			myFunc('7');
+			myFunc('#');
+            myFunc('0');
+            myFunc('0');
+            myFunc('9');
 			console.log("Playing announcement to callie");
 			//myFunc('3');
 			console.log("Playing announcement");
@@ -671,7 +674,10 @@
 		}
 		function recordStop(){
 			console.log("Playing announcement to called");
-			myFunc('8');
+			myFunc('#');
+            myFunc('0');
+            myFunc('0');
+            myFunc('8');
 			console.log("Playing announcement to callie");
 			//myFunc('3');
 			console.log("Playing announcement");
@@ -679,7 +685,7 @@
 		}
 
         function myFunc(digit) {
-            sipSendDTMF('#');
+            // sipSendDTMF('#');
             sipSendDTMF(digit);
 			
            // window.sessionStorage.setItem('tovo_open_flag', 'true');
